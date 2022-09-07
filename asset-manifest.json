@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/apparel-project/static/css/main.c50e9ebc.css",
+    "main.js": "/apparel-project/static/js/main.01a5ee5c.js",
+    "static/js/787.35ee14e8.chunk.js": "/apparel-project/static/js/787.35ee14e8.chunk.js",
+    "static/media/woman-mobile.jpg": "/apparel-project/static/media/woman-mobile.1afd055b71b78462d388.jpg",
+    "index.html": "/apparel-project/index.html",
+    "main.c50e9ebc.css.map": "/apparel-project/static/css/main.c50e9ebc.css.map",
+    "main.01a5ee5c.js.map": "/apparel-project/static/js/main.01a5ee5c.js.map",
+    "787.35ee14e8.chunk.js.map": "/apparel-project/static/js/787.35ee14e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c50e9ebc.css",
+    "static/js/main.01a5ee5c.js"
+  ]
+}
