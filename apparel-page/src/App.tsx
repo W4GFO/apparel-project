@@ -1,10 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import {ComingSoonPage} from './Components/ComingSoonPage'
 
 function App() {
   return (
-    <></>
+    <>
+      <ComingSoonPage />
+    </>
   );
 }
 

@@ -1,0 +1,49 @@
+@import './AllComponents.scss';
+
+.primarycontainer {
+	width: 100ww;
+	height: 100vh;
+
+	background: whitesmoke;
+
+	//Flex info
+	display: flex;
+	flex-direction: column;
+}
+
+.primarycontainer img {
+	width: 100%;
+}
+
+article {
+	text-align: center;
+	font-family: 'Josefin Sans', 'Times New Roman', Times, serif;
+}
+
+article header {
+	line-height: 1.2em;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+article header div:nth-child(1) {
+	color: $DesaturatedRed;
+}
+
+article header div:nth-child(2) {
+	color: $DarkGrayishRed;
+	font-weight: $FontHeavy;
+} 
+
+article p {
+	line-height: 1.3em;
+	color: $DesaturatedRed;
+	font-weight: $FontMedium;
+}
+
+@media screen and (min-width:$MinBreakPointValue) {
+	.primarycontainer {
+		flex-direction: row;
+		background: orange;
+	}
+}
