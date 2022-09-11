@@ -1,0 +1,172 @@
+@import './AllComponents.scss';
+
+.primarycontainer {
+	height: 100vh;
+
+	margin: auto auto;
+
+	overflow: hidden;
+	background: whitesmoke;
+
+	//Grid info
+	display: grid;
+
+	grid-template-areas: 
+		"title"
+		"pic"
+		"articlewriteup"
+		"email";
+}
+
+.titlebar {
+	display: flex;
+	flex-direction: row;
+	grid-area: title;
+}
+
+.titlebar img {
+	align-self: center;
+	margin-left: 16px;
+}
+
+.primarycontainer picture img {
+	width: 100%;
+	grid-area: pic;
+}
+
+article {
+	grid-area: articlewriteup;
+	text-align: center;
+	font-family: 'Josefin Sans', 'Times New Roman', Times, serif;
+}
+
+article header {
+	font-size: 2em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+article header div:nth-child(1) {
+	margin-top: 16px;
+	color: $DesaturatedRed;
+}
+
+article header div:nth-child(2) {
+	margin-top: 2px;
+	color: $DarkGrayishRed;
+	font-weight: $FontHeavy;
+} 
+
+article p {
+	line-height: 1.5em;
+	margin-left: $MinMargin * 3;
+	margin-right: $MinMargin * 3;
+	color: $DesaturatedRed;
+	font-weight: $FontMedium;
+}
+
+.email-input {
+	grid-area: email;
+
+	font-family: 'Josefin Sans', 'Times New Roman', Times, serif;
+}
+
+.email-input input {
+	width: 98%;
+	height: $InputElementsHeight;
+
+	margin-top:4px;
+
+	//So the text isn't right up against the leader edge of the input/text box
+	text-indent: $InputTextLeadingOffset;
+
+	background-color: white;
+	border: 1px solid $DesaturatedRed;
+	border-radius: $InputElementsHeight;
+}
+
+.email-input button {
+	position: relative;
+
+	left: calc(100vw - $InputButtonWidth);
+	top:-$InputElementsHeight - $MinMargin;
+
+	font-size: xx-large;
+	font-weight: bolder;
+
+	border-color: transparent;
+	background-color: pink;
+	border-radius: $InputElementsHeight;
+
+	width: $InputButtonWidth;
+	height: $InputElementsHeight + $MinMargin;
+}
+
+.email-input p {
+	color: $SoftRed;
+	position: relative;
+	top:-$InputElementsHeight - calc($MinMargin * 3);
+
+	font-size: small;
+	text-align: center;
+}
+
+/*Text inside the email input box*/
+::placeholder {
+	color: $DesaturatedRed;
+	opacity: 1; /* Firefox */
+ }
+
+ .email-input .not-visible {
+	height: 0px;
+	color: transparent;
+}
+
+@media screen and (min-width:$MinBreakPointValue) {
+	.primarycontainer {
+		max-width: 800px;
+		max-height: 400px;
+		grid-template-rows: 10% 60% 30%;
+		grid-template-columns: 60% 40%;
+
+		grid-template-areas: 
+			"title          pic"
+			"articlewriteup pic"
+			"email          pic";
+	}
+
+	.titlebar {
+		margin-left: $DesktopMargin - 25px;
+	}
+
+	article {
+		margin-top: $DesktopMargin / 3;
+		margin-left: $DesktopMargin;
+		margin-right: $DesktopMargin;
+		text-align:start;
+	}
+
+	article header {
+		font-size: 2.5em;
+	}
+
+	.email-input {
+		margin-left: $DesktopMargin;
+		margin-right: $DesktopMargin;
+	}
+
+	.email-input input{
+		width: 92%;
+		margin-top: 16px;
+		margin-left: 0px;
+	}
+
+	.email-input button {
+		left:calc(100% - $DesktopMargin);
+	}
+
+	.email-input .not-visible {
+		height: 0px;
+		color: transparent;
+	}
+}
