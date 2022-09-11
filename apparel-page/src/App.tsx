@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import {ComingSoonPage} from './Components/ComingSoonPage'
 
 function App() {

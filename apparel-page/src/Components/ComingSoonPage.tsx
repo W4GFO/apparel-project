@@ -1,6 +1,7 @@
 import './ComingSoonPage.scss'
 import {Messaging} from '../defs'
 import mobileImage from '../Images/woman-mobile.jpg'
+import desktopImage from '../Images/woman-desktop.jpg'
 
 type ComingSoonProps = {}
 
@@ -9,11 +10,14 @@ export const ComingSoonPage = (props: ComingSoonProps) => {
 		<>
 			<div className='primarycontainer'>
 				<div className='titlebar'>
-					<h1>Foo</h1>
+					<img src={require('../Images/brandLogo.svg').default} alt='mySvgImage' height={22} />
 				</div>
-			
-				<img src={mobileImage} alt='product advertisement' />
-				
+
+				<picture>
+					<source srcSet={desktopImage} media="(min-width:701px)"/>
+					<img src={mobileImage} alt="product advertisement" />
+				</picture>
+
 				<article>
 					<header>
 						<div>{Messaging.title}</div>

@@ -1,0 +1,11 @@
+@import './Components/AllComponents.scss';
+
+div#root {
+	display: flex;
+}
+
+@media screen and (min-width:$MinBreakPointValue) {
+	div#root {
+		margin-top:64px;
+	}
+}
