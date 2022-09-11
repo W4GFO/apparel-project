@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/apparel-project/static/css/main.c50e9ebc.css",
-    "main.js": "/apparel-project/static/js/main.01a5ee5c.js",
+    "main.css": "/apparel-project/static/css/main.e8a18a0b.css",
+    "main.js": "/apparel-project/static/js/main.3edd721f.js",
     "static/js/787.35ee14e8.chunk.js": "/apparel-project/static/js/787.35ee14e8.chunk.js",
+    "static/media/woman-desktop.jpg": "/apparel-project/static/media/woman-desktop.659bc9a7221d265fe28f.jpg",
     "static/media/woman-mobile.jpg": "/apparel-project/static/media/woman-mobile.1afd055b71b78462d388.jpg",
+    "static/media/brandLogo.svg": "/apparel-project/static/media/brandLogo.bfe35add16fb8c010b0231ce711541c6.svg",
     "index.html": "/apparel-project/index.html",
-    "main.c50e9ebc.css.map": "/apparel-project/static/css/main.c50e9ebc.css.map",
-    "main.01a5ee5c.js.map": "/apparel-project/static/js/main.01a5ee5c.js.map",
+    "static/media/icon-arrow.svg": "/apparel-project/static/media/icon-arrow.4b3d2d93cd838720beda936cd05c7382.svg",
+    "main.e8a18a0b.css.map": "/apparel-project/static/css/main.e8a18a0b.css.map",
+    "main.3edd721f.js.map": "/apparel-project/static/js/main.3edd721f.js.map",
     "787.35ee14e8.chunk.js.map": "/apparel-project/static/js/787.35ee14e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c50e9ebc.css",
-    "static/js/main.01a5ee5c.js"
+    "static/css/main.e8a18a0b.css",
+    "static/js/main.3edd721f.js"
   ]
 }
