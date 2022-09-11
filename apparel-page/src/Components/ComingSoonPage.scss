@@ -58,31 +58,69 @@ article header div:nth-child(2) {
 } 
 
 article p {
-	line-height: 1.3em;
+	line-height: 1.5em;
+	margin-left: $MinMargin * 3;
+	margin-right: $MinMargin * 3;
 	color: $DesaturatedRed;
 	font-weight: $FontMedium;
 }
 
-input {
+.email-input {
 	grid-area: email;
 
-	height: 40px;
-	margin-top: 30px;
-	margin-left: 12px;
-	margin-right: 12px;
-	border-radius: 40px;
+	font-family: 'Josefin Sans', 'Times New Roman', Times, serif;
+}
+
+.email-input input {
+	width: 98%;
+	height: $InputElementsHeight;
+
+	margin-top:4px;
+
+	//So the text isn't right up against the leader edge of the input/text box
+	text-indent: $InputTextLeadingOffset;
 
 	background-color: white;
 	border: 1px solid $DesaturatedRed;
+	border-radius: $InputElementsHeight;
+}
+
+.email-input button {
+	position: relative;
+
+	left: calc(100vw - $InputButtonWidth);
+	top:-$InputElementsHeight - $MinMargin;
+
+	font-size: xx-large;
+	font-weight: bolder;
+
+	border-color: transparent;
+	background-color: pink;
+	border-radius: $InputElementsHeight;
+
+	width: $InputButtonWidth;
+	height: $InputElementsHeight + $MinMargin;
+}
+
+.email-input p {
+	color: $SoftRed;
+	position: relative;
+	top:-$InputElementsHeight - calc($MinMargin * 3);
+
+	font-size: small;
+	text-align: center;
 }
 
 /*Text inside the email input box*/
 ::placeholder {
-	padding-left: 20px;
 	color: $DesaturatedRed;
 	opacity: 1; /* Firefox */
  }
 
+ .email-input .not-visible {
+	height: 0px;
+	color: transparent;
+}
 
 @media screen and (min-width:$MinBreakPointValue) {
 	.primarycontainer {
@@ -112,8 +150,23 @@ input {
 		font-size: 2.5em;
 	}
 
-	input {
+	.email-input {
 		margin-left: $DesktopMargin;
 		margin-right: $DesktopMargin;
+	}
+
+	.email-input input{
+		width: 92%;
+		margin-top: 16px;
+		margin-left: 0px;
+	}
+
+	.email-input button {
+		left:calc(100% - $DesktopMargin);
+	}
+
+	.email-input .not-visible {
+		height: 0px;
+		color: transparent;
 	}
 }
